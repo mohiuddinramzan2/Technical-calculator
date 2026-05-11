@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knitting Technical Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Circular Knitting Calculator</h2>
+        
+        <div class="calculator-card">
+            <h3>GSM Calculator</h3>
+            <div class="input-group">
+                <label>Yarn Count (Ne):</label>
+                <input type="number" id="yarnCount" placeholder="e.g. 30">
+            </div>
+            <div class="input-group">
+                <label>Stitch Length (mm):</label>
+                <input type="number" id="stitchLength" placeholder="e.g. 2.8">
+            </div>
+            <button onclick="calculateGSM()">Calculate GSM</button>
+            <p id="gsmResult" class="result"></p>
+        </div>
+
+        <div class="calculator-card">
+            <h3>Yarn Consumption (KG)</h3>
+            <div class="input-group">
+                <label>Fabric Length (Meter):</label>
+                <input type="number" id="fabLength" placeholder="e.g. 100">
+            </div>
+            <div class="input-group">
+                <label>Fabric Width (Inch):</label>
+                <input type="number" id="fabWidth" placeholder="e.g. 72">
+            </div>
+            <div class="input-group">
+                <label>GSM:</label>
+                <input type="number" id="inputGSM" placeholder="e.g. 160">
+            </div>
+            <button onclick="calculateWeight()">Calculate Weight</button>
+            <p id="weightResult" class="result"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
